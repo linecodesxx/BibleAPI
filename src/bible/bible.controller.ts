@@ -52,7 +52,7 @@ export class BibleController {
     return this.bibleService.getBooks(translation)
   };
 
-  @Get(':bookName/getChapters')
+  @Get(':bookName/getChapters/:translations')
   getChapters(
     @Param('translation') translation: string,
     @Param('bookName') bookName: string,
